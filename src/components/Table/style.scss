@@ -1,0 +1,105 @@
+.table-info {
+    $border-radius: 3px;
+
+     margin-bottom: 20px;
+
+    table {
+        width: 100%;
+        border: none;
+        border-spacing: 0;
+    
+        thead {
+            background-color: #234F88;
+            color: #A8B5C9;
+            box-shadow: 0 0 0 1px #234F88;
+            border-top-left-radius: $border-radius;
+            border-top-right-radius: $border-radius;
+            overflow: hidden;
+        }
+        
+        tbody {
+            background-color: #ffffff;
+            box-shadow: 0 0 0 1px #CCCFD6;
+            border-bottom-left-radius: $border-radius;
+            border-bottom-right-radius: $border-radius;
+            overflow: hidden;
+
+            td {
+                border-left: 1px solid #C9CCD3;
+                border-bottom: 1px solid #C9CCD3;
+                color: #323336;
+            
+                &:first-child {
+                    border-left: none;
+                }
+            }
+
+            tr {
+                &:last-child td {
+                    border-bottom: none;
+                    overflow: hidden;
+            
+                    &:first-child {
+                        border-bottom-left-radius: $border-radius;
+                    }
+            
+                    &:last-child {
+                        border-bottom-right-radius: $border-radius;
+                    }
+                }
+            }
+        }
+    
+        td,
+        th {
+            text-align: left;
+            font-weight: normal;
+            padding: 5px 20px;
+        }
+    }
+
+    
+    &__actions {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 10px;
+    }
+
+    &__remove-table,
+    &__edit-item,
+    &__remove-item {
+        background-color: transparent;
+        border: none;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    &__change-container {
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+        margin: auto;
+    }
+
+    &__copy-table {
+        background-color: #4491F7;
+        color: #ffffff;
+        padding: 7px;
+        width: 100px;
+        border-radius: $border-radius;
+        border: none;
+        cursor: pointer;
+    }
+
+    &__remove-table {
+        margin: 0 10px;
+    }
+
+    &__edit-item {
+        color: #4491F7;
+    }
+
+    &__remove-item {
+        color: #ff0000;
+    }
+}

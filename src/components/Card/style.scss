@@ -1,0 +1,32 @@
+.card-form {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    max-width: 280px;
+    border-radius: 3px;
+    padding: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 4px rgba(#000000, .2);
+
+    &__field, &__action {
+        font-size: 1em;
+        line-height: 40px;
+    }
+
+    &__field {
+        margin-bottom: 15px;
+        border-radius: 3px;
+        padding-left: 15px;
+        border: 1px solid #d4d4d4;
+    }
+
+    &__action {
+        margin-top: 15px;
+        background-color: #4491F7;
+        color: #ffffff;
+        border: none;
+        border-radius: 3px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+}
